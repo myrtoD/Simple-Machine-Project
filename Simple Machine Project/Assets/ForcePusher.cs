@@ -10,7 +10,7 @@ public class ForcePusher : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		xForce = 0;
+		xForce = 1;
 		zTourqe = 230;
 		redCube = GameObject.Find ("redCube");
 	} 
@@ -23,7 +23,7 @@ public class ForcePusher : MonoBehaviour {
 		// if (this stuff is true) }
     if ( Input.GetKey( KeyCode.Space ) == true ){
 			rb.AddForce( new Vector3( xForce, 0, 0 ) );
-			rb.AddTorque( new Vector3( 0, 0, 150) );
+			rb.AddTorque( new Vector3( 0, 0, 250) );
 			redCube.transform.localScale = new Vector3( 2, 3, 1);
 		
 	}
